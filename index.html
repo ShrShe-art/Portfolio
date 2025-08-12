@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/> 
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer></script>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full stack developer Shruti"/>
+    <meta name="keywords" content="Full stack developer Shruti"/>
+    <title>Portfolio | Shruti Shenoy </title>
+ <script>
+  new WOW().init(); 
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#14b8a6',
+          }, 
+        },
+      },
+    }; 
+</script>
+</head>
+
+<body>
+
+<nav class="bg-gray-900 fixed w-full z-40">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="#" class="text-3xl font-bold itim-regular bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent">Shruti Shenoy</a>
+    <div class="space-x-6">
+      <a href="#home" class="" style=" animation-name: fadeInDown;">Home</a>
+      <a href="#about" class=" " style=" animation-name: fadeInDown;">About</a>
+      <a href="#skills" class="" style=" animation-name: fadeInDown;">Skills</a>
+      <a href="#experience" class="" style=" animation-name: fadeInDown;">Experience</a>
+      <a href="#education" class="" style=" animation-name: fadeInDown;">Education</a>
+      <a href="#projects" class="" style=" animation-name: fadeInDown;">Projects</a>
+      <a href="#contact" class="" style=" animation-name: fadeInDown;">Contact</a>
+    </div>
+  </div>
+</nav>
+    <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles-container"></div>
+    </div>
+
+
+<section id="home" class="relative min-h-screen overflow-hidden">	
+    <div class="relative z-10 container mx-auto px-2 md:px-6 py-24 flex flex-col justify-center max-w-6xl mx-auto md:min-h-screen">
+		<div class=" font-outfit flex flex-col justify-center items-center">
+		<p class="wow fadeInDown">Hello, my name is </p>
+        <h1 class="w-fit text-center mx-auto text-3xl sm:text-6xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent mb-2 md:mb-6  wow fadeInUp animated">Shruti Shenoy</h1>
+		<h3 class="wow fadeIn text-base sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center tracking-wide text-amber-100 mb-4">Full Stack Developer</h3>
+        <p class="wow fadeIn text-base itim-regular sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center tracking-wide text-amber-100 mb-8">Engineering the Story Behind Every Click </p>
+        <a class="btn"  href="#projects">Explore Projects</a>
+		</div>
+    </div>
+</section>
+<!-- About -->
+<section id="about" class="text-white bg-black py-20 px-4 text-justify">
+  <div class="max-w-6xl mx-auto">
+    
+	<div class="grid md:grid-cols-3 gap-4">
+      <div class=" "><img src="images/self.png" class="  wow fadeInLeft" alt="About Image"  ></div>       
+	  <div class="text-md col-span-2 ml-10 wow zoomIn animated" data-wow-delay=".5s" style="background-size: cover; visibility: visible; animation-delay: 0.5s; animation-name:;">
+	  <h2 class="text-3xl font-bold mb-6 wow fadeInLeft work-text">About Me</h2>
+		
+        <!--  I'm Shruti, a full stack web developer with a strong passion for crafting digital realms that captivate and inspire. I specialize in creating dynamic and interactive UI/UX experience. I stay up to date with the latest tools and techniques and worked on a wide range of projects, from personal websites to large-scale applications, sharpening my problem solving skills and fostering creativity. -->
+		<p class="mb-4 "> Hello! I'm Shruti Shenoy, a full-stack developer who loves bringing ideas to life on the web — whether it’s crafting beautiful, responsive interfaces or building strong, scalable backends.</p>
+		<p class="mb-4 ">With over 8 years of experience (and countless cups of coffee), I’ve worked across PHP, Laravel, and React, turning complex problems into simple, user-friendly solutions.</p>
+		<p class="mb-4 ">When I’m not coding, you’ll probably find me exploring new tech trends, tweaking side projects, or hunting for the perfect playlist to code to. My goal? To make the internet a little more useful, one project at a time.</p>
+		<p class="mb-4">If you're seeking a dedicated and passionate developer, I'm eager to collaborate with you. Let's bring your ideas to life!</p>
+         
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 px-4 bg-gray-900">
+	<div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl text-center font-bold mb-12 wow fadeIn work-text">SKILLS</h2>
+	 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10 gap-4 flex  items-center justify-center">
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+			<img src="images/icons/html-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+			<span>HTML 5</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+			<img src="images/icons/css-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+			<span>CSS 3</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/javascript-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Javascript</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/php-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>PHP</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">	
+			<img src="images/icons/tailwind-css-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Tailwind</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/codeigniter-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Codeigniter</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/jquery-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Jquery</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/typescript-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Typescript</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/laravel-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Laravel</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+			<img src="images/icons/mysql-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>MySQL</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/mariadb-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>MariaDB</span>
+		</div>
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/angular-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Angular</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/git-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Git</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/github-white-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Github</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/visual-studio-code-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>VS Code</span>
+		</div> 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/postman-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Postman</span>
+		</div> 		 
+		<div class="gradientbg flex flex-col items-center p-4 rounded-lg shadow-md group w-25 h-25  rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-3 hover:bg-gray-700">
+		  <img src="images/icons/bootstrap-icon.svg" class="w-10 h-10 group-hover:animate-bounce transition duration-300" />
+		  <span>Bootstrap</span>
+		</div>  
+	 </div> 
+	</div>
+</section>
+ 
+<section id="projects" class="bg-black text-white py-12 px-4 md:px-8">
+  <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+  <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+	
+	<!-- One page mint Card -->
+     <div class="bg-gray-900 wow fadeInLeft rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+      <img src="images/projects/project-onepagemint.png" alt="Project 2" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">OnePageMint</h3>
+        <p class="text-slate-300 mb-4 text-sm">An one-page parallax website template with sleek and interactive user experience having smooth parallax scrolling effects.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/html-icon.svg" alt="HTML" class="w-6 h-6"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/css-icon.svg" alt="CSS" class="w-6 h-6"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="Tailwind" class="w-6 h-6"></span>				 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+	
+	<!-- Elite CRM Card -->
+    <div class="bg-gray-900 wow fadeInUp rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+      <img src="images/projects/project-elitecrm-board.png" alt="Project 2" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">Elite CRM</h3>
+        <p class="text-slate-300 mb-4 text-sm">A powerful tool to manage customer relationships, track sales, and streamline communication. Designed to boost productivity and improve client interactions.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/angular-icon.svg" alt="Angular" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/php-icon.svg" alt="PHP" class="w-8 h-8"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/html-icon.svg" alt="HTML" class="w-6 h-6"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/bootstrap-icon.svg" alt="CSS" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/javascript-icon.svg" alt="CSS" class="w-6 h-6"></span>			 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+	
+	<!-- Windkart Card -->  
+     <div class="bg-gray-900 wow fadeInRight rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+      <img src="images/projects/project-windkart.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">
+      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">WindKart</h3>
+        <p class="text-slate-300 mb-4 text-sm">A sleek, user-friendly platform to browse and purchase products seamlessly. Features include product catalogs, wishlist products, and secure checkout.</p> 
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/react-js-icon.svg" alt="HTML" class="w-6 h-6"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/javascript-icon.svg" alt="CSS" class="w-6 h-6"></span>				 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="Tailwind" class="w-6 h-6"></span>				 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div> 
+
+	<!-- Task flow Card -->
+     <div class="bg-gray-900 wow fadeInUp rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+      <img src="images/projects/project-taskflow.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">
+      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">Task Flow</h3>
+        <p class="text-slate-300 mb-4 text-sm">Organize, prioritize, and track daily tasks with ease. Helps users stay productive and meet deadlines efficiently.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/laravel-icon.svg" alt="laravel" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="CSS" class="w-6 h-6"></span>		 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/phpmyadmin-icon.svg" alt="Tailwind" class="w-8 h-8"></span>		 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/jquery-icon.svg" alt="CSS" class="w-6 h-6"></span>			 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+	<!-- Elevatetext Card -->
+     <div class="bg-gray-900 wow fadeInUp rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+		<img src="images/projects/project-elevatetext.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">ElevateText</h3>
+        <p class="text-slate-300 mb-4 text-sm">AI-powered tool to summarize, refine grammar, and adjust tone effortlessly. Perfect for clear, concise, and polished communication.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/react-js-icon.svg" alt="HTML" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="Tailwind" class="w-6 h-6"></span>	 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+
+	<!-- Weather app Card -->
+	<div class="bg-gray-900 wow zoomIn rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+      <img src="images/projects/project-weatherapp.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">Weather App</h3>
+        <p class="text-slate-300 mb-4 text-sm">A clean, real-time weather forecast app providing detailed current weather conditions based on the city.</p>
+		 
+			<div class="flex flex-wrap gap-3 ">
+				<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+					<span class="text-sm sm:text-lg"><img src="images/icons/html-icon.svg" alt="HTML" class="w-6 h-6"></span>				 
+				</div>
+				<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+					<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="CSS" class="w-6 h-6"></span>				 
+				</div>
+				<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+					<span class="text-sm sm:text-lg"><img src="images/icons/database-icon.svg" alt="Tailwind" class="w-6 h-6"></span>				 
+				</div>
+			</div> 
+			<!-- <a href="https://github.com/ShrShe-art" target="_blank"
+			   class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 w-36 px-4 py-2 rounded-full transition">
+			  <span class="text-sm">Source Code</span> 
+			  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+			</a> -->
+		 
+      </div>
+    </div> 
+	<!-- Quiz app Card -->
+	<div   class="bg-gray-900 wow zoomIn rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+  
+      <img src="images/projects/project-quizapp.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">Quiz App</h3>
+        <p class="text-slate-300 mb-4 text-sm">An interactive quiz platform with multiple choice questions.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/react-js-icon.svg" alt="HTML" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="Tailwind" class="w-6 h-6"></span>	 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+	<!-- Guess number game Card -->
+	<div   class="bg-gray-900 wow zoomIn rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+  
+      <img src="images/projects/project-guessnumbergame.png" alt="Project 1" class="w-full h-48 object-fit group-hover:scale-105 transition-transform duration-300">      
+      <div class="p-6">
+        <h3 class="text-xl text-white font-semibold mb-2">Guess the Number</h3>
+        <p class="text-slate-300 mb-4 text-sm">Fun and interactive game where players try to guess the hidden number. Designed to challenge your logic and keep you entertained.</p>
+		<div class="flex flex-wrap gap-3">
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/react-js-icon.svg" alt="HTML" class="w-6 h-6"></span>			 
+			</div>
+			<div class="flex items-center transition-all duration-200 hover:shadow-lg backdrop-blur-sm">
+				<span class="text-sm sm:text-lg"><img src="images/icons/tailwind-css-icon.svg" alt="Tailwind" class="w-6 h-6"></span>	 
+			</div>
+		</div> 
+        <!-- <a href="https://github.com/ShrShe-art" target="_blank"
+           class="inline-block my-3 text-sm text-black bg-white hover:bg-blue-700 px-4 py-2 rounded-full transition">
+          <span class="text-sm">Source Code</span> 
+		  <span class="float-right ml-2"><img src="images/icons/github-icon.svg" alt="Tailwind" class="w-4 h-4"></span> 
+        </a> -->
+      </div>
+    </div>
+
+   
+  </div>
+</section>
+
+
+<section id="experience" class="text-white py-20 px-4 bg-gray-900">
+<div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-white mb-10 wow fadeInDown">Professional Experience</h2>
+
+    <div class="relative border-l border-gray-300">
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.1s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Senior Developer 
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2023 - 2024</span>
+          </h3>
+          <p class="mb-2 text-base font-normal text-gray-500">Full-stack software engineer in the Application Development and Support team. Provided technical support and website updates as needed. Mentored junior developers, conducting code reviews and best practice sessions.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.3s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-green-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Web Developer 
+            <span class="bg-green-100 text-green-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2018 - 2023</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Developed new features using PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Redesigned the web application to improve UX/UI design and user journey. Implemented GIT-based version control to streamline team collaboration.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.5s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-yellow-500 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Front End Developer 
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2016 - 2018</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Built and maintained multiple client websites with PHP, CodeIgniter, MySQL, and JavaScript. Worked on UI/UX design, responsive components, designed logos and coporate identity. </p>
+        </div>
+      </div>
+	  
+      <!-- Timeline Item --> 
+      <div class="ml-6 wow fadeInUp" data-wow-delay="0.7s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-purple-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Trainee Software Engineer
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2013 - 2014</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Gained hands-on experience by working on small coding tasks, fixing bugs, and learning the basics of web development.</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+<section id="education" class="max-w-4xl mx-auto text-white py-20 px-4 bg-black">
+    <!-- Education Box -->
+    <div class="bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white p-6 rounded-lg shadow-lg wow fadeInUp hover-glow">
+      <div class="flex items-center mb-3">
+        <svg class="w-7 h-7 text-white mr-3 shimmer" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"></path>
+          <path d="M11 12.5v6.92l-6-3.18v-6.73l6 3z"></path>
+          <path d="M13 12.5l6-3v6.73l-6 3.18v-6.91z"></path>
+        </svg>
+        <h3 class="text-2xl font-semibold">Education</h3>
+      </div>
+      <p class="text-white/90 font-semibold">Master of Computer Science (MSc)</p>
+      <p class="text-white/80">Shivaji University</p>
+      <p class="text-white/80">Graduated: 2015</p>
+      <ul class="mt-3 list-disc list-inside text-white/80">
+        <li>Specialized in Web Development & Database Management</li>
+        <li>Completed final-year project: “Production ERP”</li>
+      </ul>
+	  <div class="flex items-center mb-3 mt-3">
+         
+        <h3 class="text-xl font-semibold">Certifications</h3>
+      </div>
+	  <ul class="mt-3 list-circle list-inside text-white/80">
+		<li>Microsoft Certified: Database Administration Fundamentals </li>
+		<li>Microsoft Certified: Software Development Fundamentals </li>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" class="text-white py-20 px-4 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+	<div class="">
+		<h2 class="text-3xl text-center font-bold mb-8 wow fadeIn">Contact Me</h2>
+		<form class="space-y-6 wow fadeInUp">
+		  <div class="grid md:grid-cols-2 gap-6">
+			<input type="text" placeholder="Your Name" class="w-full  border border-neutral-700 p-3 rounded-lg bg-gray-800/50   text-white focus:border-fuchsia-600/50 focus:outline-none" required>
+			<input type="email" placeholder="Your Email" class="w-full  border border-neutral-700 p-3 rounded-lg bg-gray-800/50 text-white focus:border-fuchsia-600/50 focus:outline-none" required>
+		  </div>
+		  <textarea rows="5" placeholder="Your Message" class="w-full  border border-neutral-700 p-3 rounded-lg bg-gray-800/50 text-white focus:border-fuchsia-600/50 focus:outline-none" required></textarea>
+		  <button type="submit" class="btn text-white px-6 py-2 rounded">Send Message</button>
+		</form>
+	</div> 
+  </div>
+  
+</section>
+
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top" class="hidden fixed bottom-6 right-6 bg-indigo-600 text-white w-12 h-12 rounded-full shadow-lg z-50">↑</button>
+
+<footer class="relative  overflow-hidden border-t border-white/10   backdrop-blur-sm">
+	<div class="absolute -top-40 left-1/2 h-40 w-[800px] -translate-x-1/2   blur-[100px]"></div>
+		<div class="container mx-auto px-4 py-12" style="opacity: 1;">
+			<div class="flex flex-col items-center justify-center gap-8">
+				<div class="flex items-center justify-center gap-6" style="opacity: 1; transform: none;">
+					<a target="_blank" rel="noopener noreferrer" class="group relative" href="https://github.com/ShrShe-art/">
+						<span class="absolute -inset-2 -z-10 scale-0 rounded-full bg-white/5 transition-all duration-300 group-hover:scale-100"></span>
+						<div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white shadow-lg transition-colors duration-300 hover:bg-purple-500/20 hover:text-purple-300" style="transform: none;">
+							<i class="fab fa-github"></i>
+						</div>
+						<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs font-medium text-white/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">GitHub</span>
+					</a>
+					<a target="_blank" rel="noopener noreferrer" class="group relative" href="https://www.linkedin.com/in/shruti-shenoy-ab9514ba/">
+						<span class="absolute -inset-2 -z-10 scale-0 rounded-full bg-white/5 transition-all duration-300 group-hover:scale-100"></span>
+						<div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white shadow-lg transition-colors duration-300 hover:bg-blue-500/20 hover:text-blue-400" style="transform: none;">
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap text-xs font-medium text-white/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">LinkedIn</span>
+					</a> 
+				</div>
+				<div class="flex w-full max-w-xs items-center gap-4" style="opacity: 1; transform: none;">
+					<div class="h-px flex-1 bg-gradient-to-r from-transparent to-white/20"></div>
+					<div class="h-1.5 w-1.5 rounded-full bg-purple-500/50"></div>
+					<div class="h-px flex-1 bg-gradient-to-l from-transparent to-white/20"></div>
+				</div>
+				<p class="text-center text-sm text-white/60" style="opacity: 1; transform: none;">© 2025 
+				<span class="bg-gradient-to-r from-white to-purple-300 bg-clip-text font-medium text-transparent">Shruti Shenoy</span>. All Rights Reserved.</p>
+			</div>
+		</div>
+</footer>
+<script>
+
+</script>
+</body>
+
