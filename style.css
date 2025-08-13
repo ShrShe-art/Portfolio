@@ -73,16 +73,17 @@ html { font-family: raleway !important; }
             overflow: hidden;
         }
 		
-nav {
+.navbar {
     visibility: visible !important;
     opacity: 1 !important;
 }
-nav a {
+.navbar a {
     position: relative;
-    display: inline-block;
+    display: block;
+	margin: 0px 15px;
 }
 
-nav a::after {
+.navbar a::after {
     content: "";
     position: absolute;
     width: 0%;
@@ -92,12 +93,12 @@ nav a::after {
     background-color: #ff3a82;
     transition: width 0.3s ease;
 }
-nav a:hover::after {
+.navbar a:hover::after {
     width: 100%;
 }
 
 /* Keep underline if active */
-nav a.active::after {
+.navbar a.active::after {
     width: 100%;
 }
 	 

@@ -39,20 +39,27 @@
 
 <body>
 
-<nav class="bg-gray-900 fixed w-full z-40">
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="#" class="text-3xl font-bold itim-regular bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent">Shruti Shenoy</a>
-    <div class="space-x-6">
-      <a href="#home" class="" style=" animation-name: fadeInDown;">Home</a>
-      <a href="#about" class=" " style=" animation-name: fadeInDown;">About</a>
+  <nav class="flex flex-wrap items-center justify-between p-5 bg-gray-900 fixed w-full z-40">      
+	<div class="max-w-6xl mx-auto flex justify-between items-center">	<a href="#" class="text-3xl font-bold itim-regular bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent">Shruti Shenoy</a>
+      <div class="flex md:hidden z-40">
+        <button id="hamburger">
+          <img class="toggle block" src="images/menu-icon.png" width="40" height="40" />
+          <img class="toggle hidden" src="images/close.png" width="40" height="40" />
+        </button>
+      </div>      
+      <div class="navbar z-40 toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">        
+         
+		<a href="#home" class="" style=" animation-name: fadeInDown;">Home</a> 
+        <a href="#about" class=" " style=" animation-name: fadeInDown;">About</a>
       <a href="#skills" class="" style=" animation-name: fadeInDown;">Skills</a>
       <a href="#experience" class="" style=" animation-name: fadeInDown;">Experience</a>
       <a href="#education" class="" style=" animation-name: fadeInDown;">Education</a>
       <a href="#projects" class="" style=" animation-name: fadeInDown;">Projects</a>
       <a href="#contact" class="" style=" animation-name: fadeInDown;">Contact</a>
-    </div>
-  </div>
-</nav>
+	  </div>
+    </nav>  
+
+
     <div class="gradient-background">
         <div class="gradient-sphere sphere-1"></div>
         <div class="gradient-sphere sphere-2"></div>
@@ -64,7 +71,7 @@
     </div>
 
 
-<section id="home" class="relative min-h-screen overflow-hidden">	
+<section id="home" class="relative md:min-h-screen overflow-hidden">	
     <div class="relative z-10 container mx-auto px-2 md:px-6 py-24 flex flex-col justify-center max-w-6xl mx-auto md:min-h-screen">
 		<div class=" font-outfit flex flex-col justify-center items-center">
 		<p class="wow fadeInDown">Hello, my name is </p>
@@ -171,6 +178,106 @@
 	 </div> 
 	</div>
 </section>
+ 
+<section id="experience" class="text-white py-20 px-4 bg-black">
+<div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-white mb-10 wow fadeInDown">Professional Experience</h2>
+
+    <div class="relative border-l border-gray-300">
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.1s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Senior Developer 
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2023 - 2024</span>
+          </h3>
+          <p class="mb-2 text-base font-normal text-gray-500">Full-stack software engineer in the Application Development and Support team. Provided technical support and website updates as needed. Mentored junior developers, conducting code reviews and best practice sessions.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.3s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-green-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Web Developer 
+            <span class="bg-green-100 text-green-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2018 - 2023</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Developed new features using PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Redesigned the web application to improve UX/UI design and user journey. Implemented GIT-based version control to streamline team collaboration.</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.5s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-yellow-500 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Front End Developer 
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2016 - 2018</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Built and maintained multiple client websites with PHP, CodeIgniter, MySQL, and JavaScript. Worked on UI/UX design, responsive components, designed logos and coporate identity. </p>
+        </div>
+      </div>
+	  
+      <!-- Timeline Item --> 
+      <div class="ml-6 wow fadeInUp" data-wow-delay="0.7s">
+        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-purple-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="mb-1 text-lg font-semibold text-gray-900">Trainee Software Engineer
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2013 - 2014</span>
+          </h3>
+          <p class="text-base font-normal text-gray-500">Gained hands-on experience by working on small coding tasks, fixing bugs, and learning the basics of web development.</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+<section id="education" class=" text-white py-20 px-4 bg-gray-900">
+  <div class="max-w-4xl mx-auto"> <!-- Education Box -->
+    <div class="bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white p-6 rounded-lg shadow-lg wow fadeInUp hover-glow">
+      <div class="flex items-center mb-3">
+        <svg class="w-7 h-7 text-white mr-3 shimmer" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"></path>
+          <path d="M11 12.5v6.92l-6-3.18v-6.73l6 3z"></path>
+          <path d="M13 12.5l6-3v6.73l-6 3.18v-6.91z"></path>
+        </svg>
+        <h3 class="text-2xl font-semibold">Education</h3>
+      </div>
+      <p class="text-white/90 font-semibold">Master of Computer Science (MSc)</p>
+      <p class="text-white/80">Shivaji University</p>
+      <p class="text-white/80">Graduated: 2015</p>
+      <ul class="mt-3 list-disc list-inside text-white/80">
+        <li>Specialized in Web Development & Database Management</li>
+        <li>Completed final-year project: “Production ERP”</li>
+      </ul>
+	  <div class="flex items-center mb-3 mt-3">
+         
+        <h3 class="text-xl font-semibold">Certifications</h3>
+      </div>
+	  <ul class="mt-3 list-circle list-inside text-white/80">
+		<li>Microsoft Certified: Database Administration Fundamentals </li>
+		<li>Microsoft Certified: Software Development Fundamentals </li>
+	</ul>
+    </div>
+    </div>
+</section> 
  
 <section id="projects" class="bg-black text-white py-12 px-4 md:px-8">
   <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
@@ -383,104 +490,6 @@
   </div>
 </section>
 
-
-<section id="experience" class="text-white py-20 px-4 bg-gray-900">
-<div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-white mb-10 wow fadeInDown">Professional Experience</h2>
-
-    <div class="relative border-l border-gray-300">
-
-      <!-- Timeline Item -->
-      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.1s">
-        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
-          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Senior Developer 
-            <span class="bg-blue-100 text-blue-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2023 - 2024</span>
-          </h3>
-          <p class="mb-2 text-base font-normal text-gray-500">Full-stack software engineer in the Application Development and Support team. Provided technical support and website updates as needed. Mentored junior developers, conducting code reviews and best practice sessions.</p>
-        </div>
-      </div>
-
-      <!-- Timeline Item -->
-      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.3s">
-        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-green-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
-          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h3 class="mb-1 text-lg font-semibold text-gray-900">Web Developer 
-            <span class="bg-green-100 text-green-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2018 - 2023</span>
-          </h3>
-          <p class="text-base font-normal text-gray-500">Developed new features using PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Redesigned the web application to improve UX/UI design and user journey. Implemented GIT-based version control to streamline team collaboration.</p>
-        </div>
-      </div>
-
-      <!-- Timeline Item -->
-      <div class="mb-10 ml-6 wow fadeInUp" data-wow-delay="0.5s">
-        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-yellow-500 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
-          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h3 class="mb-1 text-lg font-semibold text-gray-900">Front End Developer 
-            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2016 - 2018</span>
-          </h3>
-          <p class="text-base font-normal text-gray-500">Built and maintained multiple client websites with PHP, CodeIgniter, MySQL, and JavaScript. Worked on UI/UX design, responsive components, designed logos and coporate identity. </p>
-        </div>
-      </div>
-	  
-      <!-- Timeline Item --> 
-      <div class="ml-6 wow fadeInUp" data-wow-delay="0.7s">
-        <span class="pulse-icon absolute -left-3 flex items-center justify-center w-6 h-6 bg-purple-600 rounded-full ring-8 ring-white transition-transform duration-300 hover:scale-110">
-          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4h2V8h-2v6zm0-8h2V6h-2v2z" clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h3 class="mb-1 text-lg font-semibold text-gray-900">Trainee Software Engineer
-            <span class="bg-purple-100 text-purple-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded">2013 - 2014</span>
-          </h3>
-          <p class="text-base font-normal text-gray-500">Gained hands-on experience by working on small coding tasks, fixing bugs, and learning the basics of web development.</p>
-        </div>
-      </div>
-
-    </div>
-    </div>
-  </section>
-
-<section id="education" class="max-w-4xl mx-auto text-white py-20 px-4 bg-black">
-    <!-- Education Box -->
-    <div class="bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white p-6 rounded-lg shadow-lg wow fadeInUp hover-glow">
-      <div class="flex items-center mb-3">
-        <svg class="w-7 h-7 text-white mr-3 shimmer" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"></path>
-          <path d="M11 12.5v6.92l-6-3.18v-6.73l6 3z"></path>
-          <path d="M13 12.5l6-3v6.73l-6 3.18v-6.91z"></path>
-        </svg>
-        <h3 class="text-2xl font-semibold">Education</h3>
-      </div>
-      <p class="text-white/90 font-semibold">Master of Computer Science (MSc)</p>
-      <p class="text-white/80">Shivaji University</p>
-      <p class="text-white/80">Graduated: 2015</p>
-      <ul class="mt-3 list-disc list-inside text-white/80">
-        <li>Specialized in Web Development & Database Management</li>
-        <li>Completed final-year project: “Production ERP”</li>
-      </ul>
-	  <div class="flex items-center mb-3 mt-3">
-         
-        <h3 class="text-xl font-semibold">Certifications</h3>
-      </div>
-	  <ul class="mt-3 list-circle list-inside text-white/80">
-		<li>Microsoft Certified: Database Administration Fundamentals </li>
-		<li>Microsoft Certified: Software Development Fundamentals </li>
-    </div>
-  </section>
 
 <!-- Contact -->
 <section id="contact" class="text-white py-20 px-4 bg-gray-900">
